@@ -4,7 +4,6 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.apache.log4j.Logger;
-import org.gutenberg.utilities.EmailHelper;
 import org.gutenberg.utilities.FileReader;
 import org.gutenberg.utilities.WebDriverHelper;
 import org.openqa.selenium.OutputType;
@@ -38,7 +37,7 @@ public class Hook {
         }
         logger.info("##############################");
         WebDriverHelper.close();
-        EmailHelper.sendEmail();
+        //EmailHelper.sendEmail();
     }
 }
 
