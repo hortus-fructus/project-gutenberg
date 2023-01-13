@@ -39,5 +39,6 @@ public class StepDefinitions {
     public void Element_should_contains_text(String string1,String string2) {
         String element = FileReader.getProperty(string1,filePath);
         assert SeleniumHelper.getElement(element).getText().contains(string2);
+        BrowserUtils.wait(10);
     }
 }
